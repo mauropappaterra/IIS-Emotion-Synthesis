@@ -13,10 +13,9 @@
 <h3 id="help">Instructions to run the programs</h3>
 -Clone or download this repository<br>
 -To run these programs in your computer you need to <a href="https://www.python.org/downloads/">download and install Python 3.</a><br>
--To execute from the command line on a Ms Windows system you need to <a href="https://docs.python.org/2/using/windows.html">add Python to the PATH environmental variable.</a><br>
--Install <a href="https://opencv.org/">OpenCV</a> and <a href="http://www.numpy.org/">Numpy</a> Python libraries
-1. Open a terminal <br>
-3. On the command line execute: <br>
+-To execute from the command line on a Ms Windows system you need to <a href="https://docs.python.org/2/using/windows.html">add Python and Pip to the PATH environmental variable.</a><br>
+-Install <a href="https://opencv.org/">OpenCV</a> and <a href="http://www.numpy.org/">Numpy</a> Python libraries  <br>
+Open a terminal and execute: <br>
 &nbsp &nbsp &nbsp <code>> pip install numpy opencv-python </code> <br>
 -Do not hesitate to contact me if you have any problems running these programs or if you find any bugs <br>
 
