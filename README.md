@@ -1,7 +1,7 @@
 <h1>Emotion Synthesis</h1>
 <h2>For Intelligent Interactive Systems course at Uppsala University</h2>
 
-<img href="https://i.imgur.com/vaEwpcK.png" width=500px>
+<img src="https://i.imgur.com/vaEwpcK.png" width=500px>
 
 <h3>Group Members</h3>
 <ul>
