@@ -8,7 +8,7 @@
     <li>Christina Bremer</li>
     <li>Mauro José Pappaterra</li>
     <li>Hassam Odimi</li>
-    <li>Amanda</li>
+    <li>Amanda Larruy Bergqvist</li>
 </ul>
 
 <hr>

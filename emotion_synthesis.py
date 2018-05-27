@@ -64,17 +64,17 @@ def getEmotion (index):
 
 def playVideo (video_index):
 
-    if (video_index == 0):
+    if (video_index == 0): # Input -> ANGER -> Output -> FEAR
         cap = cv2.VideoCapture('videos/01.flv')
-    elif (video_index == 1):
+    elif (video_index == 1): # Input -> DISGUST -> Output -> DISGUST
         cap = cv2.VideoCapture('videos/02.flv')
-    elif (video_index == 2):
+    elif (video_index == 2): # Input -> FEAR -> Output -> SURPRISE
         cap = cv2.VideoCapture('videos/01.flv')
-    elif (video_index == 3):
+    elif (video_index == 3): # Input -> HAPPY -> Output -> FEAR
         cap = cv2.VideoCapture('videos/02.flv')
-    elif (video_index == 4):
+    elif (video_index == 4): # Input -> SADNESS -> Output -> SADNESS
         cap = cv2.VideoCapture('videos/01.flv')
-    elif (video_index == 5):
+    elif (video_index == 5): # Input -> SURPRISE -> Output -> SURPRISE
         cap = cv2.VideoCapture('videos/02.flv')
 
     while (cap.isOpened()):
