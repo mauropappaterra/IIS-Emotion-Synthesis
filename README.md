@@ -1,6 +1,8 @@
 <h1>Emotion Synthesis</h1>
 <h2>For Intelligent Interactive Systems course at Uppsala University</h2>
 
+<img href="https://i.imgur.com/vaEwpcK.png" width=500px>
+
 <h3>Group Members</h3>
 <ul>
     <li>Christina Bremer</li>
@@ -16,8 +18,7 @@
 -To execute from the command line on a Ms Windows system you need to <a href="https://docs.python.org/2/using/windows.html">add Python and Pip to the PATH environmental variable.</a><br>
 -Install <a href="https://opencv.org/">OpenCV</a> and <a href="http://www.numpy.org/">Numpy</a> Python libraries. You can do this by opening a terminal and executing: <br>
 &nbsp &nbsp &nbsp <code>> pip install numpy opencv-python </code> <br>
-
-<br>-Do not hesitate to contact me if you have any problems running this programs or if you find any bugs <br><br>
+-Do not hesitate to contact me if you have any problems running this programs or if you find any bugs
 
 <h4>From the command line:</h4>
 1. Open a terminal <br>
