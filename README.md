@@ -1,5 +1,5 @@
 <h1>Emotion Synthesis</h1>
-<h2>For Intelligent Interactive Systems course at Uppsala University</h2>
+<h2>Intelligent Interactive Systems - Uppsala University</h2>
 
 <img src="https://i.imgur.com/vaEwpcK.png" width=500px>
 
@@ -12,7 +12,7 @@
 </ul>
 
 <hr>
-<h3 id="help">Instructions to run the programs</h3>
+<h3 id="help">Instructions to run the program</h3>
 -Clone or download this repository<br>
 -To run these programs in your computer you need to <a href="https://www.python.org/downloads/">download and install Python 3.</a><br>
 -To execute from the command line on a Ms Windows system you need to <a href="https://docs.python.org/2/using/windows.html">add Python and Pip to the PATH environmental variable.</a><br>
