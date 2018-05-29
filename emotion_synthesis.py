@@ -1,6 +1,5 @@
 from random import *
 import cv2
-import numpy as np
 
 def randomInput():
     """This function generates uniform inputs to emulate the input given by the Machine Learning algorithm"""
