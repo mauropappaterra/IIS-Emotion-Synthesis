@@ -63,19 +63,20 @@ def getEmotion (index):
         return "SURPRISE"
 
 def playVideo (video_index):
+    """This function plays the corresponding video given an index as an input"""
 
     if (video_index == 0): # Input -> ANGER -> Output -> FEAR
-        cap = cv2.VideoCapture('videos/01.flv')
-    elif (video_index == 1): # Input -> DISGUST -> Output -> DISGUST
-        cap = cv2.VideoCapture('videos/02.flv')
+        cap = cv2.VideoCapture('videos/fear.flv')
+    elif (video_index == 1): # Input -> DISGUST -> Output -> SADNESS
+        cap = cv2.VideoCapture('videos/sadness.flv')
     elif (video_index == 2): # Input -> FEAR -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/01.flv')
-    elif (video_index == 3): # Input -> HAPPY -> Output -> FEAR
-        cap = cv2.VideoCapture('videos/02.flv')
+        cap = cv2.VideoCapture('videos/surprise.flv')
+    elif (video_index == 3): # Input -> HAPPY -> Output -> HAPPY
+        cap = cv2.VideoCapture('videos/happiness.flv')
     elif (video_index == 4): # Input -> SADNESS -> Output -> SADNESS
-        cap = cv2.VideoCapture('videos/01.flv')
+        cap = cv2.VideoCapture('videos/sadness.flv')
     elif (video_index == 5): # Input -> SURPRISE -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/02.flv')
+        cap = cv2.VideoCapture('videos/surprise.flv')
 
     while (cap.isOpened()):
         ret, frame = cap.read()
@@ -90,6 +91,13 @@ def playVideo (video_index):
     cv2.destroyAllWindows()
 
 def emotionSynthesis (input):
+    """This is the main function for the Emotion Synthesis module, given a list containing the probability distribution
+    of all the emotions perceived as an input, this function maps out the emotions with the corresponding probabilities
+    print out the information on the console and triggers the corresponding reaction from the agent, for the purpose of
+    the presentation it will play a video instead. e.g.
+    Input: [0.17666491, 0.72653016, 0.01022988, 0.01623115, 0.06900918, 0.00133472]
+    Output: Highest Value => 0.72653016 Most Likely Emotion => DISGUST"""
+
     highest = max(input)  # find highest probability
 
     for index, probability in enumerate(input):
@@ -115,6 +123,14 @@ def emotionSynthesis (input):
     elif (highest_index == 5):
         playVideo(5)
 
-input = randomInput()
-emotionSynthesis(input)
+# FOR TESTING PURPOSES
+# Uncomment the lines below to generate randomly inputs simulations
+#again = True
+#while (again):
+#    emotionSynthesis(randomInput())
 
+#    again = input("\nWant to play the simulation again? y/n\n").lower()
+#    while (again != 'y' and again != 'n'):
+#        again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
+#    again = (again == 'y')
+#print("\n-EXIT BY USER-")

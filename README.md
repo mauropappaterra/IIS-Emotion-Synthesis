@@ -24,7 +24,7 @@
 1. Open a terminal <br>
 2. Navigate to the folder where the files are located <br>
 3. On the command line execute: <br>
-&nbsp &nbsp &nbsp <code>> python3 <i>emotion_synthesis.py</i> </code> <br>
+&nbsp &nbsp &nbsp <code>> python <i>emotion_synthesis.py</i> </code> <br>
 
 <h4>From the Python interpreter:</h4>
 1. Open Python <br>
