@@ -13,8 +13,7 @@
 
 <hr>
 <h3>Video Demonstration</h3>
-
-[![Link to video demonstration on YouTube](https://img.youtube.com/vi/y0tf02Du5eE&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=y0tf02Du5eE&feature=youtu.be)
+<a href="https://www.youtube.com/watch?v=y0tf02Du5eE&feature=youtu.be"><img src="https://i.imgur.com/Nlo73hC.png" width=500px> </a>
 
 <hr>
 <h3 id="help">General Instructions to run the programs</h3>
