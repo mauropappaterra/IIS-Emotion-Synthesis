@@ -30,7 +30,7 @@
 
 <h3 id="help">Instructions for iristk (virtual agent) emotion synthesis </h3>
 -The iristk virtual-agent-based emotion synthesis can be found inside the <i>iristk</i> folder <br>
--On your Iristtk installation modify the emotions .xml file by appending the contents of the file new_gestures.xml. Make sure you paste the contents of the file between the xml tags <code>><gestures></gestures></code> <br>
+-On your Iristtk installation modify the emotions .xml file by appending the contents of the file new_gestures.xml. Make sure you paste the contents of the file between the xml tags <'gestures><'/gestures> <br>
 -Run the Iristk Java Server on Eclipse or similar SDK. <br>
 -Follow the instructions below to execute furnet.py <br>
 
