@@ -13,7 +13,7 @@
 
 <hr>
 <h3>Video Demonstration</h3>
-<a href="https://www.youtube.com/watch?v=y0tf02Du5eE&feature=youtu.be"><img src="https://i.imgur.com/Nlo73hC.png" width=1000px> </a>
+<a href="https://www.youtube.com/watch?v=y0tf02Du5eE&feature=youtu.be"><img src="https://i.imgur.com/jUZb4OC.png" width=1000px> </a>
 <h4>Click on the thumbnail to play the Demo video for irisTK agent implementation</h4>
 <hr>
 <h3 id="help">General Instructions to run the programs</h3>
