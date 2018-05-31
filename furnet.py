@@ -3,7 +3,7 @@ import time
 import unittest
 import socket
 import sys
-import emotion_synthesis_iristTK as es
+import emotion_synthesis_iristTK as es #Import Emotion Synthesis script as external module
 
 from multiprocessing import Process, Queue
 
@@ -140,7 +140,10 @@ class Demo():
 		if self.furnet.connected:
 			self.furnet.say(output[0])
 			self.furnet.gaze(1.0, 1.0, 1.0, True)
+			time.sleep(1)
 			self.furnet.gesture(output[1])
+			time.sleep(1)
+			self.furnet.gesture('clear')
 
 			print "Waiting for executed ack responses",
 			sys.stdout.flush()
@@ -159,4 +162,3 @@ if __name__ == '__main__':
 	
 	demo = Demo('localhost', 1337)
 	demo.execute()
-
