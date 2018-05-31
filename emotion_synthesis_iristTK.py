@@ -123,13 +123,13 @@ def emotionSynthesis (input):
 
 # FOR TESTING PURPOSES
 # Uncomment the lines below to generate randomly inputs simulations
-"""again = True
-while (again):
-    random_input = randomInput()
-    emotionSynthesis(random_input)
+#again = True
+#while (again):
+#    random_input = randomInput()
+#    emotionSynthesis(random_input)
 
-    again = input("\nWant to play the simulation again? y/n\n").lower()
-    while (again != 'y' and again != 'n'):
-        again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
-    again = (again == 'y')
-print("\n-EXIT BY USER-")"""
+#    again = input("\nWant to play the simulation again? y/n\n").lower()
+#    while (again != 'y' and again != 'n'):
+#        again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
+#    again = (again == 'y')
+#print("\n-EXIT BY USER-")
