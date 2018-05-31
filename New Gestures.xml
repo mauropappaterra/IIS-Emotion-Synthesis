@@ -1,5 +1,5 @@
 <!-- Anger -->
-    <gesture name="Anger">
+    <gesture name="anger">
   		<param name="NECK_PAN">16(5) 32(-5) 16(0)</param>
   		<param name="BROW_DOWN_LEFT">32(0) 32(1) 32(1)</param>
   		<param name="BROW_DOWN_RIGHT">32(0) 32(0.75) 32(0.75)</param>
@@ -19,7 +19,7 @@
 <!-- End Anger  -->
 
 <!-- Disgust -->
-	<gesture name="Disgust">
+	<gesture name="disgust">
 		<param name="BLINK_LEFT">16(0) 64(0.3) 64(0)</param>
 		<param name="BROW_DOWN_LEFT">24(0) 64(1) 64(0)</param>
 		<param name="BROW_IN_LEFT">24(0) 64(1) 64(0)</param>
@@ -45,7 +45,7 @@
 <!-- End Disgust -->
 
 <!-- Happiness -->
-	<gesture name="Happiness">
+	<gesture name="happiness">
 		<param name="BROW_UP_LEFT">16(0) 64(0.60) 64(0)</param>
 		<param name="BROW_UP_RIGHT">16(0) 64(0.60) 64(0)</param>
 		<param name="SMILE_CLOSED">16(0) 64(1) 64(0)</param>
@@ -83,48 +83,29 @@
     <param name="PHONE_BIGAAH">16(0)</param>
   </gesture>
 
-  <gesture name="fear_build_up"> <!--Fear Build up -->
+<!--Fear-->
+  <gesture name="fear">
     <param name="PHONE_B_M_P"> 16(3)</param>
     <param name="EXPR_FEAR">16(0.8) 16(1)</param>
     <param name="BROW_UP_LEFT">16(0.5) 16(1)</param>
     <param name="BROW_UP_RIGHT">16(0.5) 16 (1)</param>
-  </gesture>
-
-  <gesture name="squint2"> <!--Squint2 -->
     <param name="EYE_SQUINT_LEFT">16(0) 16(0) 16(0.25) 16(0.5) 16(2)</param>
     <param name="BROW_DOWN_LEFT">16(0) 16(0) 16(2)</param>
     <param name="LOOK_UP">16(0) 16(0) 16(0.5)</param>
-    <!--<param name="PHONE_EH">16(1)</param>
-    <param name="NECK_TILT">16(1)</param> -->
-  </gesture>
-
-
-  <gesture name="unsquint">  <!--reset -->
     <param name="EXPR_FEAR">16(0)</param>
     <param name="EYE_SQUINT_LEFT">16(0)</param>
     <param name="BROW_DOWN_LEFT">16(0)</param>
     <param name="SURPRISE">16(2)</param>
     <param name="BROW_UP_LEFT">16(1)</param>
     <param name="BROW_UP_RIGHT">16(1)</param>
-    <!--<param name="PHONE_EH">16(1)</param>
-    <param name="NECK_TILT">16(1)</param> -->
-  </gesture>
-
-  <gesture name="fear_mouth_open">  <!--open mouth -->
     <param name="PHONE_B_M_P">16(0)</param>
     <param name="PHONE_F_V">16(1)</param>
     <param name="PHONE_AAH">16(0.2)</param>
     <param name="PHONE_BIGAAH">16(0.8)</param>
     <param name="PHONE_F_V">16(1)</param>
     <param name="EXPR_FEAR">16(0.5)</param>
-    <!--<param name="PHONE_EH">16(1)</param>
-    <param name="NECK_TILT">16(1)</param> -->
+	<param name="NECK_PAN">2(10) 4(-10) 6(10) 8(-10) 10(10) 12(-10) 14(10) 16(-10) 18(10) 20(0)</param>
   </gesture>
-
-  <gesture name="shiver"> <!-- shiver -->
-    <param name="NECK_PAN">2(10) 4(-10) 6(10) 8(-10) 10(10) 12(-10) 14(10) 16(-10) 18(10) 20(0)</param>
-  </gesture>
-
 <!-- End Fear -->
 
 <!-- Sadness -->

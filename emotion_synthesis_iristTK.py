@@ -60,6 +60,43 @@ def getEmotion (index):
     elif (index == 5):
         return "SURPRISE"
 
+def getOutput (index):
+    """Maps the given index on the input array to the corresponding dialog and emotion to display returned
+    as a tuple"""
+    if (index == 0): #ANGER
+
+        if (randint(0, 1) == 1):
+            return ("That's so scary","fear")
+        else:
+            return ("I will get you!","anger")
+
+    elif (index == 1): #DISGUST
+
+        if (randint(0, 1) == 1):
+            return ("Oh no! That makes me wanna cry!", "sadness")
+        else:
+            return ("Ewwww! That's gross!", "disgust")
+
+    elif (index == 2): #FEAR
+        if (randint(0, 1) == 1):
+            return ("That's so scary","fear")
+        else:
+            return ("Woow, I did not see that coming!", "surprise")
+
+    elif (index == 3 or index == 5): #HAPPINESS OR SURPRISE
+
+        if (randint(0, 1) == 1):
+            return ("Yes! I am so glad to hear that!", "happiness")
+        else:
+            return ("Woow, I did not see that coming!", "surprise")
+
+    elif (index == 4):#SADNESS
+        if (randint(0, 1) == 1):
+            return ("Oh no! That makes me wanna cry!", "sadness")
+        else:
+            return ("Woow, I did not see that coming!", "surprise")
+
+
 def emotionSynthesis (input):
     """This is the main function for the Emotion Synthesis module, given a list containing the probability distribution
     of all the emotions perceived as an input, this function maps out the emotions with the corresponding probabilities
@@ -79,14 +116,20 @@ def emotionSynthesis (input):
     print("\nHighest Value => " + str(highest))
     print("Most Likely Emotion => " + getEmotion(highest_index))
 
+    output = getOutput(highest_index)
+    print("Agent Output =>" + str(output))
+
+    return output
+
 # FOR TESTING PURPOSES
 # Uncomment the lines below to generate randomly inputs simulations
-again = True
+"""again = True
 while (again):
-    emotionSynthesis(randomInput())
+    random_input = randomInput()
+    emotionSynthesis(random_input)
 
     again = input("\nWant to play the simulation again? y/n\n").lower()
     while (again != 'y' and again != 'n'):
         again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
     again = (again == 'y')
-print("\n-EXIT BY USER-")
+print("\n-EXIT BY USER-")"""

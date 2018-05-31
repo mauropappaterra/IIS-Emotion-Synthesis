@@ -2,7 +2,8 @@ import threading
 import time
 import unittest
 import socket
-import sys 
+import sys
+import emotion_synthesis_iristTK as es
 
 from multiprocessing import Process, Queue
 
@@ -131,11 +132,15 @@ class Demo():
 		
 	def execute(self):
 		self.furnet.connect()
+
+		#Generate Random Input
+		input = es.randomInput()
+		output = es.emotionSynthesis(input)
 		
 		if self.furnet.connected:
-			self.furnet.say('Hello World!')
+			self.furnet.say(output[0])
 			self.furnet.gaze(1.0, 1.0, 1.0, True)
-			self.furnet.gesture('smile')
+			self.furnet.gesture(output[1])
 
 			print "Waiting for executed ack responses",
 			sys.stdout.flush()
