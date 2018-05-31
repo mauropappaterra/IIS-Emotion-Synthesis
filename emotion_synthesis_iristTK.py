@@ -1,5 +1,4 @@
 from random import *
-import cv2
 
 def randomInput():
     """This function generates uniform inputs to emulate the input given by the Machine Learning algorithm"""
@@ -61,34 +60,6 @@ def getEmotion (index):
     elif (index == 5):
         return "SURPRISE"
 
-def playVideo (video_index):
-    """This function plays the corresponding video given an index as an input"""
-
-    if (video_index == 0): # Input -> ANGER -> Output -> FEAR
-        cap = cv2.VideoCapture('videos/fear.flv')
-    elif (video_index == 1): # Input -> DISGUST -> Output -> SADNESS
-        cap = cv2.VideoCapture('videos/sadness.flv')
-    elif (video_index == 2): # Input -> FEAR -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/surprise.flv')
-    elif (video_index == 3): # Input -> HAPPY -> Output -> HAPPY
-        cap = cv2.VideoCapture('videos/happiness.flv')
-    elif (video_index == 4): # Input -> SADNESS -> Output -> SADNESS
-        cap = cv2.VideoCapture('videos/sadness.flv')
-    elif (video_index == 5): # Input -> SURPRISE -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/surprise.flv')
-
-    while (cap.isOpened()):
-        ret, frame = cap.read()
-
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-        cv2.imshow('frame', gray)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-
-    cap.release()
-    cv2.destroyAllWindows()
-
 def emotionSynthesis (input):
     """This is the main function for the Emotion Synthesis module, given a list containing the probability distribution
     of all the emotions perceived as an input, this function maps out the emotions with the corresponding probabilities
@@ -108,28 +79,14 @@ def emotionSynthesis (input):
     print("\nHighest Value => " + str(highest))
     print("Most Likely Emotion => " + getEmotion(highest_index))
 
-    #Play corresponding emotion video
-    if (highest_index == 0):
-        playVideo(0)
-    elif (highest_index == 1):
-        playVideo(1)
-    elif (highest_index == 2):
-        playVideo(2)
-    elif (highest_index == 3):
-        playVideo(3)
-    elif (highest_index == 4):
-        playVideo(4)
-    elif (highest_index == 5):
-        playVideo(5)
-
 # FOR TESTING PURPOSES
 # Uncomment the lines below to generate randomly inputs simulations
-#again = True
-#while (again):
-#    emotionSynthesis(randomInput())
+again = True
+while (again):
+    emotionSynthesis(randomInput())
 
-#    again = input("\nWant to play the simulation again? y/n\n").lower()
-#    while (again != 'y' and again != 'n'):
-#        again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
-#    again = (again == 'y')
-#print("\n-EXIT BY USER-")
+    again = input("\nWant to play the simulation again? y/n\n").lower()
+    while (again != 'y' and again != 'n'):
+        again = input("Not a valid option. Enter 'y' for yes or 'n' for no!").lower()
+    again = (again == 'y')
+print("\n-EXIT BY USER-")
