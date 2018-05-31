@@ -41,7 +41,7 @@ def randomInput():
     input = [ANGER, DISGUST, FEAR, HAPPY, SADNESS, SURPRISE]
 
     #Print input to screen
-    print("RANDOMIZED INPUT\n" + str(input) + "\n" + str(round(sum(input),8)) + "\n")
+    print("\nRANDOMIZED INPUT\n" + str(input) + "\n" + str(round(sum(input),8)) + "\n")
 
     return input
 
@@ -117,7 +117,7 @@ def emotionSynthesis (input):
     print("Most Likely Emotion => " + getEmotion(highest_index))
 
     output = getOutput(highest_index)
-    print("Agent Output =>" + str(output))
+    print("Agent Output =>" + str(output) + "\n")
 
     return output
 
