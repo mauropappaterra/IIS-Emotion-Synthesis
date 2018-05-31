@@ -60,29 +60,6 @@
 	</gesture>
 <!-- End Happiness -->
 
-<!-- Fear -->
-
-  <gesture name="reset"> <!--Reset all parameters -->
-    <param name="EXPR_ANGER">16(0)</param>
-    <param name="EXPR_DISGUST">16(0)</param>
-    <param name="EXPR_FEAR">16(0)</param>
-    <param name="EXPR_SAD">16(0)</param>
-    <param name="SURPRISE">16(0)</param>
-    <param name="BROW_UP_LEFT">16(0)</param>
-    <param name="BROW_UP_RIGHT">16(0)</param>
-    <param name="BROW_DOWN_LEFT">16(0)</param>
-    <param name="LOOK_LEFT">16(0)</param>
-    <param name="LOOK_RIGHT">16(0)</param>
-    <param name="LOOK_UP">16(0)</param>
-    <param name="PHONE_B_M_P">16(0)</param>
-    <param name="PHONE_F_V">16(0)</param>
-    <param name="NECK_TILT">16(0)</param>
-    <param name="EYE_SQUINT_LEFT">16(0)</param>
-    <param name="PHONE_CH_J_SH">16(0)</param>
-    <param name="PHONE_AAH">16(0)</param>
-    <param name="PHONE_BIGAAH">16(0)</param>
-  </gesture>
-
 <!--Fear-->
   <gesture name="fear">
     <param name="PHONE_B_M_P"> 16(3)</param>
@@ -127,3 +104,89 @@
     <param name="PHONE_BIGAAH">30(0.8) 30(0)</param>
   </gesture>
 <!-- End Surprise -->
+
+<!-- To Clear all emotions and facial expressions  -->
+    <gesture name="clear">
+  		<param name="NECK_PAN">16(0)</param>
+  		<param name="BROW_DOWN_LEFT">16(0)</param>
+  		<param name="BROW_DOWN_RIGHT">16(0)</param>
+  		<param name="PHONE_TH">16(0)</param>
+  		<param name="EXPR_ANGER">16(0)</param>
+  		<param name="EXPR_ANGER">16(0)</param>
+
+		<param name="BLINK_LEFT">16(0)</param>
+		<param name="BROW_DOWN_LEFT">16(0)</param>
+		<param name="BROW_IN_LEFT">16(0)</param>
+		<param name="EXPR_DISGUST">16(0)</param>
+		<param name="LOOK_LEFT">16(0)</param>
+		<param name="LOOK_UP">16(0)</param>
+		<param name="PHONE_EE">16(0)</param>
+		<param name="PHONE_W">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="SMILE_CLOSED">16(0)</param>
+		<param name="SMILE_OPEN">16(0)</param>
+		<param name="SURPRISE">16(0)</param>
+		<param name="EPICANTHIC_FOLD">16(0)</param>
+		<param name="PHONE_AAH">16(0)</param>
+		<param name="PHONE_BIGAAH">16(0)</param>
+		<param name="SMILE_CLOSED">16(0)</param>
+		<param name="SMILE_OPEN">16(0)</param>
+		<param name="PHONE_BIGAAH">16(0)</param>
+
+		<param name="EXPR_ANGER">16(0)</param>
+		<param name="EXPR_DISGUST">16(0)</param>
+		<param name="EXPR_FEAR">16(0)</param>
+		<param name="EXPR_SAD">16(0)</param>
+		<param name="SURPRISE">16(0)</param>
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="BROW_DOWN_LEFT">16(0)</param>
+		<param name="LOOK_LEFT">16(0)</param>
+		<param name="LOOK_RIGHT">16(0)</param>
+		<param name="LOOK_UP">16(0)</param>
+		<param name="PHONE_B_M_P">16(0)</param>
+		<param name="PHONE_F_V">16(0)</param>
+		<param name="NECK_TILT">16(0)</param>
+		<param name="EYE_SQUINT_LEFT">16(0)</param>
+		<param name="PHONE_CH_J_SH">16(0)</param>
+		<param name="PHONE_AAH">16(0)</param>
+		<param name="PHONE_BIGAAH">16(0)</param>
+
+		<param name="PHONE_B_M_P"> 16(0)</param>
+		<param name="EXPR_FEAR">16(0)</param>
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="EYE_SQUINT_LEFT">16(0)</param>
+		<param name="BROW_DOWN_LEFT">16(0)</param>
+		<param name="LOOK_UP">16(0)</param>
+		<param name="EXPR_FEAR">16(0)</param>
+		<param name="EYE_SQUINT_LEFT">16(0)</param>
+		<param name="BROW_DOWN_LEFT">16(0)</param>
+		<param name="SURPRISE">16(0)</param>
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="PHONE_B_M_P">16(0)</param>
+		<param name="PHONE_F_V">16(0)</param>
+		<param name="PHONE_AAH">16(0)</param>
+		<param name="PHONE_BIGAAH">16(0)</param>
+		<param name="PHONE_F_V">16(0)</param>
+		<param name="EXPR_FEAR">16(0)</param>
+		<param name="NECK_PAN">16(0)</param>
+
+		<param name="EXPR_SAD">16(0)</param>
+		<param name="BROW_IN_LEFT">16(0)</param>
+		<param name="BROW_IN_RIGHT">16(0)</param>
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="PHONE_B_M_P">16(0)</param>
+		<param name="PHONE_F_V">16(0)</param>
+
+		<param name="BROW_UP_LEFT">16(0)</param>
+		<param name="BROW_UP_RIGHT">16(0)</param>
+		<param name="PHONE_BIGAAH">16(0)</param>
+
+    </gesture>
+	<!-- End Clear -->
