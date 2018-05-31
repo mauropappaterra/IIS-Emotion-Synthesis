@@ -3,9 +3,9 @@ import time
 import unittest
 import socket
 import sys
-import emotion_synthesis_iristTK as es #Import Emotion Synthesis script as external module
+from iristk import emotion_synthesis as es
 
-from multiprocessing import Process, Queue
+from multiprocessing import Queue
 
 END_MARKER = '\n'
 
@@ -139,7 +139,7 @@ class Demo():
 		
 		if self.furnet.connected:
 			self.furnet.say(output[0])
-			self.furnet.gaze(1.0, 1.0, 1.0, True)
+			#self.furnet.gaze(1.0, 1.0, 1.0, True)
 			time.sleep(1)
 			self.furnet.gesture(output[1])
 			time.sleep(1)

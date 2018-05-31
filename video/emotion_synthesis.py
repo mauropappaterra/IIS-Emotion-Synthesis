@@ -65,17 +65,17 @@ def playVideo (video_index):
     """This function plays the corresponding video given an index as an input"""
 
     if (video_index == 0): # Input -> ANGER -> Output -> FEAR
-        cap = cv2.VideoCapture('videos/fear.flv')
+        cap = cv2.VideoCapture('video/fear.flv')
     elif (video_index == 1): # Input -> DISGUST -> Output -> SADNESS
-        cap = cv2.VideoCapture('videos/sadness.flv')
+        cap = cv2.VideoCapture('video/sadness.flv')
     elif (video_index == 2): # Input -> FEAR -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/surprise.flv')
+        cap = cv2.VideoCapture('video/surprise.flv')
     elif (video_index == 3): # Input -> HAPPY -> Output -> HAPPY
-        cap = cv2.VideoCapture('videos/happiness.flv')
+        cap = cv2.VideoCapture('video/happiness.flv')
     elif (video_index == 4): # Input -> SADNESS -> Output -> SADNESS
-        cap = cv2.VideoCapture('videos/sadness.flv')
+        cap = cv2.VideoCapture('video/sadness.flv')
     elif (video_index == 5): # Input -> SURPRISE -> Output -> SURPRISE
-        cap = cv2.VideoCapture('videos/surprise.flv')
+        cap = cv2.VideoCapture('video/surprise.flv')
 
     while (cap.isOpened()):
         ret, frame = cap.read()

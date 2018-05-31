@@ -11,13 +11,29 @@
     <li>Amanda Larruy Bergqvist</li>
 </ul>
 
+<h3>Group Members</h3>
+<ul>
+    <li>Christina Bremer</li>
+    <li>Mauro José Pappaterra</li>
+    <li>Hassam Odimi</li>
+    <li>Amanda Larruy Bergqvist</li>
+</ul>
+
 <hr>
-<h3 id="help">Instructions to run the program</h3>
+<h3 id="help">General Instructions to run the programs</h3>
 -Clone or download this repository<br>
 -To run these programs in your computer you need to <a href="https://www.python.org/downloads/">download and install Python 3.</a><br>
 -To execute from the command line on a Ms Windows system you need to <a href="https://docs.python.org/2/using/windows.html">add Python and Pip to the PATH environmental variable.</a><br>
+
+<h3 id="help">Instructions for video emotion synthesis </h3>
+-The video based emotion synthesis can be find on <i>emotion_synthesis_video.py</i>
 -Install <a href="https://opencv.org/">OpenCV</a> and <a href="http://www.numpy.org/">Numpy</a> Python libraries. You can do this by opening a terminal and executing: <br>
 &nbsp &nbsp &nbsp <code>> pip install numpy opencv-python </code> <br>
+
+<h3 id="help">Instructions for iristk (virtual agent) emotion synthesis </h3>
+-The iristk (virtual agent) based emotion synthesis can be find on <i>emotion_synthesis_iristk.py</i>
+- On yout Iristtk installation modify the emotions .xml file by appending the contents of new_gestures.xml. Make sure you paste the contesnts of the file between the xml tags <gestures></gestures>
+
 -Do not hesitate to contact me if you have any problems running this programs or if you find any bugs
 
 <h4>From the command line:</h4>
