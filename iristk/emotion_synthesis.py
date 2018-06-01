@@ -1,3 +1,7 @@
+# IIS - Emotion Synthesis
+# emotion_synthesis.py
+# Created by Mauro José Pappaterra on 25 May 2018.
+
 from random import *
 
 def randomInput():

@@ -1,3 +1,7 @@
+# IIS - Emotion Synthesis
+# furnet.py
+# Modified by Mauro José Pappaterra on 25 May 2018.
+
 import threading
 import time
 import unittest
