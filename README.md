@@ -39,7 +39,7 @@
 1. Open a terminal <br>
 2. Navigate to the folder where the files are located <br>
 3. On the command line execute: <br>
-&nbsp &nbsp &nbsp <code>> python3 <i>script</i>.py </code> <br>
+&nbsp &nbsp &nbsp <code>> python <i>script</i>.py </code> <br>
 &nbsp &nbsp &nbsp <b>Notice: Replace <i>script</i> with the name of the file you want to execute e.g. furnet.py</b> <br>
 
 <h4>From the Python interpreter:</h4>
