@@ -8,7 +8,6 @@
     <li>Christina Bremer</li>
     <li>Mauro José Pappaterra</li>
     <li>Hassam Odimi</li>
-    <li>A. L. B.</li>
 </ul>
 
 <hr>
